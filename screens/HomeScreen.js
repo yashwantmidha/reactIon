@@ -34,7 +34,8 @@ class HomeScreen extends Component {
             style={styles.container}
            onPress={() => this.props.navigation.navigate('LinksStack',
            {
-             items : item
+             //items : item
+             
            })}
            
            

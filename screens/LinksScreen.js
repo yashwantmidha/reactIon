@@ -6,7 +6,7 @@ import HomeScreen from './HomeScreen';
 export default function LinksScreen() {
   return (
     <ScrollView style={styles.container}>
-      <text>{HomeScreen.Email}</text>
+      <text>{item.email}</text>
     </ScrollView>
   );
 }
