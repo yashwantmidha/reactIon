@@ -12,10 +12,10 @@ class HomeScreen extends Component {
   };
   fetchData = async () => {
     const response = await fetch(
-      "https://jsonplaceholder.typicode.com/comments"
+      "https://thawing-hollows-21222.herokuapp.com/artists"
     );
     const json = await response.json();
-    this.setState({ data: json });
+    this.setState({ data: json.data });
   };
 
   alertItemName = item => {
@@ -32,12 +32,12 @@ class HomeScreen extends Component {
           <TouchableOpacity
             key={item.id}
             style={styles.container}
-           onPress={() => this.props.navigation.navigate('LinksStack',
+           onPress={() => this.props.navigation.navigate('ArtistDetails',
            {
-             //items : item
-             
+             artist : item
+             //func: alertItemName()
            })}
-           
+          // onPress={() => this.alertItemName(item)}
            
           >
             <Text style={styles.text}>{item.email}</Text>
