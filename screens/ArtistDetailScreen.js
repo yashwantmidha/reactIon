@@ -9,7 +9,7 @@ export default ArtistDetails = (props) => {
     <View>
       <Text>{artist.id}</Text>
       <Text>{artist.website}</Text>
-      <Text>{ artist.name }</Text>
+      <Text>{artist.name }</Text>
       <Text>{artist.website}</Text>
       <Text>{artist.twitter}</Text>
       <Text>{artist.facebook}</Text>
