@@ -7,12 +7,15 @@ export default ArtistDetails = (props) => {
   
   return (
     <View>
+      <Text>{artist.id}</Text>
+      <Text>{artist.website}</Text>
       <Text>{ artist.name }</Text>
       <Text>{artist.website}</Text>
       <Text>{artist.twitter}</Text>
       <Text>{artist.facebook}</Text>
       <Text>{artist.instagram}</Text>
       <Text>{artist.email}</Text>
+      <Text>{artist.bio}</Text>
 
     </View>
   );
