@@ -40,7 +40,7 @@ class HomeScreen extends Component {
           // onPress={() => this.alertItemName(item)}
            
           >
-            <Text style={styles.text}>{item.email}</Text>
+            <Text style={styles.text}>{item.name}</Text>
           </TouchableOpacity>
         ))}</View>
       </ScrollView>
